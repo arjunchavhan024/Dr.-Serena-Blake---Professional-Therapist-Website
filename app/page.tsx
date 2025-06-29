@@ -146,14 +146,15 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-white border-bottom">
+      <section id="about" className="py-20 bg-white border-b border-gray-300">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h2 className="text-4xl font-light text-slate-800 mb-6">
+            {/* Text Content */}
+            <div className="space-y-6 text-[#7E7E6B]">
+              <h2 className="text-4xl font-light mb-6 text-[#7E7E6B]">
                 Meet Dr. Serena Blake
               </h2>
-              <div className="space-y-4 text-slate-600 leading-relaxed">
+              <div className="space-y-4 leading-relaxed text-[#7E7E6B]">
                 <p className="text-lg">
                   Dr. Serena Blake is a licensed clinical psychologist (PsyD)
                   based in Los Angeles, CA, with eight years of experience and
@@ -171,23 +172,26 @@ export default function Home() {
                   supportive space for you to thrive.
                 </p>
               </div>
+
               <div className="grid grid-cols-2 gap-4 pt-6">
                 <div className="text-center p-4 bg-blue-50 rounded-lg">
                   <div className="text-2xl font-semibold text-blue-700">8</div>
-                  <div className="text-sm text-slate-600">Years Experience</div>
+                  <div className="text-sm text-[#7E7E6B]">Years Experience</div>
                 </div>
                 <div className="text-center p-4 bg-blue-50 rounded-lg">
                   <div className="text-2xl font-semibold text-blue-700">
                     500+
                   </div>
-                  <div className="text-sm text-slate-600">Client Sessions</div>
+                  <div className="text-sm text-[#7E7E6B]">Client Sessions</div>
                 </div>
               </div>
             </div>
+
+            {/* Image */}
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000&fit=crop"
+                  src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Dr. Serena Blake"
                   className="w-full h-[600px] object-cover"
                 />
@@ -198,146 +202,157 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-slate-50">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-light text-slate-800 mb-4">
-              Specialized Services
-            </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-              Comprehensive mental health support tailored to your unique needs
-              and goals
-            </p>
-          </div>
+      <section className="bg-[#F3F0E8] text-[#41413f] py-20">
+        {/* Intro Text Block */}
+        <div className="max-w-4xl mx-auto px-4 text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-light leading-relaxed mb-6">
+            Therapy can be a space where you invest in yourself—
+            <br />
+            one of the highest forms of self-care.
+          </h2>
+          <p className="text-base md:text-lg leading-relaxed text-[#41413f]">
+            You may be led to therapy by anxiety, depression, relationship
+            stress, past or recent trauma, grief and loss, self-esteem issues,
+            or challenges with family, parenting, or parental relationships.
+            Whatever the source of your stress, you don’t have to face it alone.
+            Therapy offers you the time and space to work toward wellness and
+            peace.
+          </p>
+        </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-0 shadow-lg">
-              <div className="relative h-48 overflow-hidden rounded-t-lg">
-                <img
-                  src="https://images.unsplash.com/photo-1618616191524-a9721186cbe4?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Anxiety & Stress Management"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                />
-              </div>
-              <CardHeader className="text-center pb-2">
-                <div className="mx-auto mb-4 p-3 bg-blue-100 rounded-full w-fit">
-                  <Brain className="h-6 w-6 text-blue-700" />
-                </div>
-                <CardTitle className="text-xl text-slate-800">
-                  Anxiety & Stress Management
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-slate-600 leading-relaxed text-center">
-                  Learn practical coping strategies and mindfulness techniques
-                  to manage anxiety, reduce stress, and regain control over your
-                  emotional well-being through evidence-based therapeutic
-                  approaches.
-                </CardDescription>
-              </CardContent>
-            </Card>
+        <hr className="border-[#41413f] max-w-6xl mx-auto mb-16" />
 
-            <Card className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-0 shadow-lg">
-              <div className="relative h-48 overflow-hidden rounded-t-lg">
-                <img
-                  src="https://images.pexels.com/photos/1415131/pexels-photo-1415131.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
-                  alt="Relationship Counseling"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                />
-              </div>
-              <CardHeader className="text-center pb-2">
-                <div className="mx-auto mb-4 p-3 bg-pink-100 rounded-full w-fit">
-                  <Users className="h-6 w-6 text-pink-700" />
-                </div>
-                <CardTitle className="text-xl text-slate-800">
-                  Relationship Counseling
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-slate-600 leading-relaxed text-center">
-                  Strengthen communication, rebuild trust, and deepen intimacy
-                  with your partner. Work through conflicts constructively and
-                  develop healthier relationship patterns for lasting
-                  connection.
-                </CardDescription>
-              </CardContent>
-            </Card>
+        {/* Services Section */}
+        <section id="services" className="py-20 bg-[#F3F0E8] text-[#41413f]">
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-light mb-4">Specialized Services</h2>
+              <p className="text-xl max-w-3xl mx-auto leading-relaxed">
+                Comprehensive mental health support tailored to your unique
+                needs and goals
+              </p>
+            </div>
 
-            <Card className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-0 shadow-lg">
-              <div className="relative h-48 overflow-hidden rounded-t-lg">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1667520059892-d8633db9c768?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Trauma Recovery"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                />
-              </div>
-              <CardHeader className="text-center pb-2">
-                <div className="mx-auto mb-4 p-3 bg-green-100 rounded-full w-fit">
-                  <Heart className="h-6 w-6 text-green-700" />
+            {/* Cards */}
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Card 1 */}
+              <Card className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-0 shadow-lg">
+                <div className="relative h-48 overflow-hidden rounded-t-lg">
+                  <img
+                    src="https://images.unsplash.com/photo-1618616191524-a9721186cbe4?q=80&w=1169&auto=format&fit=crop"
+                    alt="Anxiety & Stress Management"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
                 </div>
-                <CardTitle className="text-xl text-slate-800">
-                  Trauma Recovery
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-slate-600 leading-relaxed text-center">
-                  Process difficult experiences in a safe, supportive
-                  environment. Develop resilience and healing strategies to move
-                  forward with renewed strength and emotional freedom.
-                </CardDescription>
-              </CardContent>
-            </Card>
-          </div>
+                <CardHeader className="text-center pb-2">
+                  <div className="mx-auto mb-4 p-3 bg-blue-100 rounded-full w-fit">
+                    <Brain className="h-6 w-6 text-blue-700" />
+                  </div>
+                  <CardTitle className="text-xl">
+                    Anxiety & Stress Management
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="leading-relaxed text-center">
+                    Learn practical coping strategies and mindfulness techniques
+                    to manage anxiety, reduce stress, and regain control over
+                    your emotional well-being through evidence-based therapeutic
+                    approaches.
+                  </CardDescription>
+                </CardContent>
+              </Card>
 
-          <div className="mt-16 bg-white rounded-2xl shadow-lg p-8">
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-2xl font-medium text-slate-800 mb-4">
-                  Session Information
-                </h3>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-green-600" />
-                    <span className="text-slate-600">
-                      Individual sessions: $200
-                    </span>
+              {/* Card 2 */}
+              <Card className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-0 shadow-lg">
+                <div className="relative h-48 overflow-hidden rounded-t-lg">
+                  <img
+                    src="https://images.pexels.com/photos/1415131/pexels-photo-1415131.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                    alt="Relationship Counseling"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+                <CardHeader className="text-center pb-2">
+                  <div className="mx-auto mb-4 p-3 bg-pink-100 rounded-full w-fit">
+                    <Users className="h-6 w-6 text-pink-700" />
                   </div>
-                  <div className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-green-600" />
-                    <span className="text-slate-600">
-                      Couples sessions: $240
-                    </span>
+                  <CardTitle className="text-xl">
+                    Relationship Counseling
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="leading-relaxed text-center">
+                    Strengthen communication, rebuild trust, and deepen intimacy
+                    with your partner. Work through conflicts constructively and
+                    develop healthier relationship patterns for lasting
+                    connection.
+                  </CardDescription>
+                </CardContent>
+              </Card>
+
+              {/* Card 3 */}
+              <Card className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-0 shadow-lg">
+                <div className="relative h-48 overflow-hidden rounded-t-lg">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1667520059892-d8633db9c768?q=80&w=1170&auto=format&fit=crop"
+                    alt="Trauma Recovery"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+                <CardHeader className="text-center pb-2">
+                  <div className="mx-auto mb-4 p-3 bg-green-100 rounded-full w-fit">
+                    <Heart className="h-6 w-6 text-green-700" />
                   </div>
-                  <div className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-green-600" />
-                    <span className="text-slate-600">
-                      Superbill provided for insurance
-                    </span>
+                  <CardTitle className="text-xl">Trauma Recovery</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="leading-relaxed text-center">
+                    Process difficult experiences in a safe, supportive
+                    environment. Develop resilience and healing strategies to
+                    move forward with renewed strength and emotional freedom.
+                  </CardDescription>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Session Info */}
+            <div className="mt-16 bg-white rounded-2xl shadow-lg p-8">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-2xl font-medium mb-4">
+                    Session Information
+                  </h3>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3">
+                      <CheckCircle className="h-5 w-5 text-green-600" />
+                      <span>Individual sessions: $200</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <CheckCircle className="h-5 w-5 text-green-600" />
+                      <span>Couples sessions: $240</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <CheckCircle className="h-5 w-5 text-green-600" />
+                      <span>Superbill provided for insurance</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div>
-                <h3 className="text-2xl font-medium text-slate-800 mb-4">
-                  Office Hours
-                </h3>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-3">
-                    <Clock className="h-5 w-5 text-blue-600" />
-                    <span className="text-slate-600">
-                      In-person: Tue & Thu, 10 AM–6 PM
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Clock className="h-5 w-5 text-blue-600" />
-                    <span className="text-slate-600">
-                      Virtual: Mon, Wed & Fri, 1 PM–5 PM
-                    </span>
+                <div>
+                  <h3 className="text-2xl font-medium mb-4">Office Hours</h3>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3">
+                      <Clock className="h-5 w-5 text-blue-600" />
+                      <span>In-person: Tue & Thu, 10 AM–6 PM</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Clock className="h-5 w-5 text-blue-600" />
+                      <span>Virtual: Mon, Wed & Fri, 1 PM–5 PM</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </section>
 
       {/* FAQ Section */}

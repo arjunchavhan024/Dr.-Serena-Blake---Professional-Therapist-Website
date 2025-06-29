@@ -99,27 +99,33 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-screen overflow-hidden">
-        {/* Background video with consistent margin */}
-        <div className="absolute inset-0 px-4 sm:px-12 mt-4 mb-5 md:px-20 lg:px-32">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-cover rounded-none"
-          >
-            <source
-              src="https://media.istockphoto.com/id/1160402181/video/aerial-view-ocean-waves-break-into-foam-along-the-shore.mp4?s=mp4-640x640-is&k=20&c=tnxTtFqtJArKXEw2420Z2M16F7z9GNVjC2BPmxE4UPM="
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-          <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+      <section
+        className="relative flex items-center justify-center"
+        style={{ backgroundColor: "#F3F0E8", height: "120vh" }}
+      >
+        {/* Background video wrapper with padding */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="relative w-[90%] md:w-[80%] lg:w-[70%] h-[90vh] overflow-hidden  shadow-lg">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            >
+              <source
+                src="https://media.istockphoto.com/id/1160402181/video/aerial-view-ocean-waves-break-into-foam-along-the-shore.mp4?s=mp4-640x640-is&k=20&c=tnxTtFqtJArKXEw2420Z2M16F7z9GNVjC2BPmxE4UPM="
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+          </div>
         </div>
 
-        {/* Content */}
-        <div className="relative z-20 text-center max-w-4xl mx-auto px-4 sm:px-8 text-white mt-12">
+        {/* Centered Content */}
+        <div className="relative z-20 text-center max-w-4xl px-6 text-white">
           <h1 className="text-4xl md:text-5xl font-semibold leading-tight mb-4">
             Psychological Care for
           </h1>
@@ -140,7 +146,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-white">
+      <section id="about" className="py-20 bg-white border-bottom">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">

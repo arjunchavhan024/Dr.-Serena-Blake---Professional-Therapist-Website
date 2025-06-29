@@ -684,18 +684,18 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-800 text-white py-12">
+      <footer className="bg-[#F3F0E8] text-[#41413f] py-12">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h3 className="text-2xl font-light mb-4">Dr. Serena Blake, PsyD</h3>
-          <p className="text-slate-300 mb-6">
+          <p className="mb-6 text-[#41413f]">
             Licensed Clinical Psychologist • Los Angeles, CA
           </p>
-          <div className="flex justify-center items-center gap-6 text-slate-300 text-sm">
+          <div className="flex justify-center items-center gap-6 text-sm text-[#41413f]">
             <span>(323) 555-0192</span>
             <span>•</span>
             <span>serena@blakepsychology.com</span>
           </div>
-          <div className="mt-8 pt-8 border-t border-slate-700 text-slate-400 text-sm">
+          <div className="mt-8 pt-8 border-t border-[#c2c2b8] text-sm text-[#41413f]">
             <p>
               © 2024 Dr. Serena Blake. All rights reserved. Licensed in the
               state of California.

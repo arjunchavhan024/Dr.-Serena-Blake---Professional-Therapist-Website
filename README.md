@@ -6,11 +6,11 @@ A clean, responsive therapist portfolio site built using **Next.js 14** and **Ta
 
 ## 🌐 Live Site
 
-[Vercel Live Link](https://your-vercel-deployment-link.vercel.app)
+[Netlify Live Link](https://helthcare-arjunchavhan024.netlify.app/)
 
 ## 💻 GitHub Repository
 
-[GitHub Repo](https://github.com/your-username/serena-blake-therapy)
+[GitHub Repo](https://github.com/arjunchavhan024/Dr.-Serena-Blake---Professional-Therapist-Website)
 
 ---
 
@@ -22,7 +22,7 @@ Watch a short walkthrough of the website on both desktop and mobile, including:
 - Services showcase
 - Contact form validation and interaction
 
-[Demo Video Link](https://your-video-link)
+[Demo Video Link](https://drive.google.com/file/d/1XZO3QDGNZL-PBZeZgw0_GrEgytJxgSTv/view?usp=sharing)
 
 ---
 

@@ -354,6 +354,55 @@ export default function Home() {
           </div>
         </section>
       </section>
+      <section className="text-[#1e1e1e]">
+        {/* Rates and Insurance */}
+        <div className="bg-[#88A6A6] text-center py-16 px-4">
+          <h2 className="text-3xl md:text-4xl font-medium mb-6">
+            Rates and Insurance
+          </h2>
+          <p className="mb-4 text-lg">Session Fee – $200</p>
+          <p className="mb-6 text-lg">Psychodiagnostic Evaluation – $225</p>
+          <p className="max-w-3xl mx-auto text-base mb-4">
+            I accept both private pay and insurance. I am in-network with BCBS
+            and Aetna.
+          </p>
+          <p className="max-w-3xl mx-auto text-base">
+            For out-of-network plans, I’ve partnered with Mentaya using{" "}
+            <a href="#" className="underline font-medium">
+              this tool
+            </a>{" "}
+            to help you check your eligibility for reimbursement for my
+            services.
+          </p>
+        </div>
+
+        {/* Client Notice */}
+        <div className="bg-[#F3F0E8] text-center py-16 px-4">
+          <p className="text-2xl font-semibold text-[#41413f]">
+            Unable to accept new clients at this time.
+          </p>
+        </div>
+
+        {/* Quote Section with Ocean Background */}
+        <div
+          className="relative bg-cover bg-center text-center text-[#1e1e1e] py-24 px-4"
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1667435845787-cbcaefb32d2d?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+          }}
+        >
+          <div className="bg-black bg-opacity-20 absolute inset-0 z-0"></div>
+          <div className="relative z-10 max-w-4xl mx-auto">
+            <blockquote className="text-2xl md:text-3xl font-light leading-relaxed">
+              “I have come to believe that caring for myself is not
+              self-indulgent.
+              <br />
+              Caring for myself is an act of survival.”
+            </blockquote>
+            <p className="mt-6 text-lg font-medium">— Audre Lorde</p>
+          </div>
+        </div>
+      </section>
 
       {/* FAQ Section */}
       <section id="faq" className="py-20 bg-white">

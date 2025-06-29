@@ -405,13 +405,13 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="py-20 bg-white">
+      <section id="faq" className="py-20 bg-white text-[#41413f]">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-light text-slate-800 mb-4">
+            <h2 className="text-4xl font-light mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-xl text-slate-600">
+            <p className="text-xl">
               Common questions about therapy and my practice
             </p>
           </div>
@@ -419,88 +419,67 @@ export default function Home() {
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem
               value="insurance"
-              className="border border-slate-200 rounded-lg px-6"
+              className="border border-[#ddd] rounded-lg px-6"
             >
-              <AccordionTrigger className="text-lg font-medium text-slate-800 hover:text-blue-700 transition-colors">
+              <AccordionTrigger className="text-lg font-medium hover:text-blue-700 transition-colors">
                 Do you accept insurance?
               </AccordionTrigger>
-              <AccordionContent className="text-slate-600 leading-relaxed">
+              <AccordionContent className="leading-relaxed">
                 I do not directly accept insurance, but I provide a detailed
                 superbill (receipt) after each session that you can submit to
-                your insurance company for potential reimbursement. Many
-                insurance plans offer out-of-network benefits that may cover a
-                portion of the session fee. I recommend contacting your
-                insurance provider to understand your specific coverage.
+                your insurance company for potential reimbursement...
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem
               value="online"
-              className="border border-slate-200 rounded-lg px-6"
+              className="border border-[#ddd] rounded-lg px-6"
             >
-              <AccordionTrigger className="text-lg font-medium text-slate-800 hover:text-blue-700 transition-colors">
+              <AccordionTrigger className="text-lg font-medium hover:text-blue-700 transition-colors">
                 Are online sessions available?
               </AccordionTrigger>
-              <AccordionContent className="text-slate-600 leading-relaxed">
+              <AccordionContent className="leading-relaxed">
                 Yes, I offer secure virtual therapy sessions via Zoom on
-                Mondays, Wednesdays, and Fridays from 1 PM to 5 PM. Online
-                therapy can be just as effective as in-person sessions and
-                offers greater flexibility and convenience. You'll need a
-                reliable internet connection, a private space, and a device with
-                a camera and microphone.
+                Mondays, Wednesdays, and Fridays...
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem
               value="cancellation"
-              className="border border-slate-200 rounded-lg px-6"
+              className="border border-[#ddd] rounded-lg px-6"
             >
-              <AccordionTrigger className="text-lg font-medium text-slate-800 hover:text-blue-700 transition-colors">
+              <AccordionTrigger className="text-lg font-medium hover:text-blue-700 transition-colors">
                 What is your cancellation policy?
               </AccordionTrigger>
-              <AccordionContent className="text-slate-600 leading-relaxed">
+              <AccordionContent className="leading-relaxed">
                 I require 24-hour advance notice for all cancellations or
-                rescheduling requests. This allows me to offer the time slot to
-                other clients who may need it. Cancellations made with less than
-                24 hours notice will be charged the full session fee, except in
-                cases of emergency or illness. I understand that unexpected
-                situations arise, so please communicate with me as soon as
-                possible.
+                rescheduling requests...
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem
               value="first-session"
-              className="border border-slate-200 rounded-lg px-6"
+              className="border border-[#ddd] rounded-lg px-6"
             >
-              <AccordionTrigger className="text-lg font-medium text-slate-800 hover:text-blue-700 transition-colors">
+              <AccordionTrigger className="text-lg font-medium hover:text-blue-700 transition-colors">
                 What can I expect in my first session?
               </AccordionTrigger>
-              <AccordionContent className="text-slate-600 leading-relaxed">
+              <AccordionContent className="leading-relaxed">
                 Your first session is an opportunity for us to get to know each
-                other and for me to understand what brings you to therapy. We'll
-                discuss your current concerns, your goals for therapy, and your
-                personal history. I'll also explain my approach and answer any
-                questions you have about the therapeutic process. This session
-                helps me create a personalized treatment plan for you.
+                other...
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem
               value="confidentiality"
-              className="border border-slate-200 rounded-lg px-6"
+              className="border border-[#ddd] rounded-lg px-6"
             >
-              <AccordionTrigger className="text-lg font-medium text-slate-800 hover:text-blue-700 transition-colors">
+              <AccordionTrigger className="text-lg font-medium hover:text-blue-700 transition-colors">
                 Is what we discuss confidential?
               </AccordionTrigger>
-              <AccordionContent className="text-slate-600 leading-relaxed">
+              <AccordionContent className="leading-relaxed">
                 Yes, everything you share in therapy is strictly confidential
-                and protected by law. I cannot and will not share any
-                information about you or our sessions without your written
-                permission. The only exceptions are situations involving
-                imminent danger to yourself or others, suspected child or elder
-                abuse, or if ordered by a court of law. I will always discuss
-                these rare situations with you if they ever arise.
+                and protected by law...
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -508,13 +487,11 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-slate-50">
+      <section id="contact" className="py-20 bg-[#F3F0E8] text-[#41413f]">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-light text-slate-800 mb-4">
-              Get in Touch
-            </h2>
-            <p className="text-xl text-slate-600">
+            <h2 className="text-4xl font-light mb-4">Get in Touch</h2>
+            <p className="text-xl">
               Ready to take the first step? I'm here to help.
             </p>
           </div>
@@ -524,55 +501,39 @@ export default function Home() {
             <div className="space-y-8">
               <Card className="p-6 shadow-lg border-0">
                 <CardHeader className="pb-4">
-                  <CardTitle className="text-2xl text-slate-800">
+                  <CardTitle className="text-2xl">
                     Dr. Serena Blake, PsyD
                   </CardTitle>
-                  <CardDescription className="text-slate-600">
-                    Clinical Psychologist
-                  </CardDescription>
+                  <CardDescription>Clinical Psychologist</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center gap-3">
                     <MapPin className="h-5 w-5 text-blue-600" />
-                    <span className="text-slate-600">
-                      1287 Maplewood Drive, Los Angeles, CA 90026
-                    </span>
+                    <span>1287 Maplewood Drive, Los Angeles, CA 90026</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Phone className="h-5 w-5 text-blue-600" />
-                    <span className="text-slate-600">(323) 555-0192</span>
+                    <span>(323) 555-0192</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Mail className="h-5 w-5 text-blue-600" />
-                    <span className="text-slate-600">
-                      serena@blakepsychology.com
-                    </span>
+                    <span>serena@blakepsychology.com</span>
                   </div>
                 </CardContent>
               </Card>
 
               <Card className="p-6 shadow-lg border-0">
                 <CardHeader className="pb-4">
-                  <CardTitle className="text-xl text-slate-800">
-                    Office Hours
-                  </CardTitle>
+                  <CardTitle className="text-xl">Office Hours</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <div className="flex justify-between">
-                    <span className="font-medium text-slate-700">
-                      In-Person Sessions:
-                    </span>
-                    <span className="text-slate-600">
-                      Tue & Thu, 10 AM–6 PM
-                    </span>
+                    <span className="font-medium">In-Person Sessions:</span>
+                    <span>Tue & Thu, 10 AM–6 PM</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="font-medium text-slate-700">
-                      Virtual Sessions:
-                    </span>
-                    <span className="text-slate-600">
-                      Mon, Wed & Fri, 1 PM–5 PM
-                    </span>
+                    <span className="font-medium">Virtual Sessions:</span>
+                    <span>Mon, Wed & Fri, 1 PM–5 PM</span>
                   </div>
                 </CardContent>
               </Card>
@@ -581,10 +542,8 @@ export default function Home() {
             {/* Contact Form */}
             <Card className="p-6 shadow-lg border-0">
               <CardHeader className="pb-6">
-                <CardTitle className="text-2xl text-slate-800">
-                  Send a Message
-                </CardTitle>
-                <CardDescription className="text-slate-600">
+                <CardTitle className="text-2xl">Send a Message</CardTitle>
+                <CardDescription>
                   Fill out the form below and I'll get back to you within 24
                   hours.
                 </CardDescription>
@@ -593,12 +552,10 @@ export default function Home() {
                 {isSubmitted ? (
                   <div className="text-center py-8">
                     <CheckCircle className="h-16 w-16 text-green-600 mx-auto mb-4" />
-                    <h3 className="text-xl font-medium text-slate-800 mb-2">
+                    <h3 className="text-xl font-medium mb-2">
                       Thank you for reaching out!
                     </h3>
-                    <p className="text-slate-600">
-                      I'll get back to you within 24 hours.
-                    </p>
+                    <p>I'll get back to you within 24 hours.</p>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -733,22 +690,27 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#F3F0E8] text-[#41413f] py-12">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <h3 className="text-2xl font-light mb-4">Dr. Serena Blake, PsyD</h3>
-          <p className="mb-6 text-[#41413f]">
-            Licensed Clinical Psychologist • Los Angeles, CA
-          </p>
-          <div className="flex justify-center items-center gap-6 text-sm text-[#41413f]">
-            <span>(323) 555-0192</span>
-            <span>•</span>
-            <span>serena@blakepsychology.com</span>
-          </div>
-          <div className="mt-8 pt-8 border-t border-[#c2c2b8] text-sm text-[#41413f]">
-            <p>
-              © 2024 Dr. Serena Blake. All rights reserved. Licensed in the
-              state of California.
+      <footer
+        className="bg-[url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80')] 
+             bg-cover bg-center text-[#41413f] py-12"
+      >
+        <div className="bg-[#F3F0E8]/80 backdrop-brightness-95">
+          <div className="max-w-6xl mx-auto px-4 text-center py-12">
+            <h3 className="text-2xl font-light mb-4">Dr. Serena Blake, PsyD</h3>
+            <p className="mb-6">
+              Licensed Clinical Psychologist • Los Angeles, CA
             </p>
+            <div className="flex justify-center items-center gap-6 text-sm">
+              <span>(323) 555-0192</span>
+              <span>•</span>
+              <span>serena@blakepsychology.com</span>
+            </div>
+            <div className="mt-8 pt-8 border-t border-[#c2c2b8] text-sm">
+              <p>
+                © 2024 Dr. Serena Blake. All rights reserved. Licensed in the
+                state of California.
+              </p>
+            </div>
           </div>
         </div>
       </footer>
